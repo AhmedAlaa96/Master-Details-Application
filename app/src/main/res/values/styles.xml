@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="vodafone_regular_bold_14" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/vodafone_rg</item>
+        <item name="fontWeight">600</item>
+        <item name="android:textSize">@dimen/font_size_14sp</item>
+        <item name="android:textColor">@color/text_bold_color</item>
+        <item name="lineSpacing">20dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="vodafone_light_16" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/vodafone_lt_regular</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">@dimen/font_size_16sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="lineSpacing">30dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="vodafone_light_16_20_line_spacing" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/vodafone_lt_regular</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">@dimen/font_size_16sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="lineSpacing">20dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="vodafone_regular_16" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/vodafone_rg</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">@dimen/font_size_16sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="lineSpacing">30dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="vodafone_regular_18" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/vodafone_rg</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">@dimen/font_size_18sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="lineSpacing">30dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="vodafone_regular_18_hint" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/vodafone_rg</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">@dimen/font_size_18sp</item>
+        <item name="android:textColor">@color/hint_color</item>
+        <item name="lineSpacing">30dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="vodafone_regular_18_white" parent="vodafone_regular_18">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="vodafone_regular_18_white_20_line_spacing" parent="vodafone_regular_18_white">
+        <item name="lineSpacing">20dp</item>
+    </style>
+
+    <style name="vodafone_regular_16_hint" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/vodafone_rg</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">@dimen/font_size_16sp</item>
+        <item name="android:textColor">@color/hint_color</item>
+        <item name="lineSpacing">30dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="vodafone_light_20" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/vodafone_lt_regular</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">@dimen/font_size_20sp</item>
+        <item name="android:textColor">@color/hint_color</item>
+        <item name="lineSpacing">30dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="vodafone_regular_20" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/vodafone_rg</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">@dimen/font_size_20sp</item>
+        <item name="android:textColor">@color/hint_color</item>
+        <item name="lineSpacing">30dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="vodafone_regular_24" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/vodafone_rg</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">@dimen/font_size_24sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="lineSpacing">30dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+
+</resources>
