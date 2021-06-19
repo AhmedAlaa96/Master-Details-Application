@@ -202,7 +202,9 @@ class MainActivity : AppCompatActivity() {
             val searchValue = contentMainActivityBinding.searchEditText.text.toString().trim()
             val tempItems = mutableListOf<Airline>()
             for (item in airlinesItemsList){
-                if(item.name.contains(searchValue,true)){
+                if((!item.name.isNullOrEmpty() && item.name.contains(searchValue,true))
+                    || (!item.id.isNullOrEmpty() && item.id.contains(searchValue,true) )
+                    || (!item.country.isNullOrEmpty() && item.country.contains(searchValue,true))){
                     tempItems.add(item)
                 }
             }
