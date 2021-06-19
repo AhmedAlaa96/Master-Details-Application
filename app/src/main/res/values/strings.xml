@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Master Details</string>
-    <string name="countries_text">Countries</string>
+    <string name="airlines_text">Airlines</string>
+    <string name="airline_details_text">Airline Details</string>
     <string name="fab_plus_text">Plus Icon to add new airline</string>
     <string name="search_by_airline_name_text">Search by airline name</string>
     <string name="search_airlines_by_name_text">Search airlines by name</string>

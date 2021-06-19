@@ -25,7 +25,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/countries_text"
+                android:text="@string/airlines_text"
                 style="@style/vodafone_regular_24"
                 android:gravity="center"
                 android:layout_margin="@dimen/size_16dp"/>

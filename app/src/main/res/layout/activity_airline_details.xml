@@ -39,7 +39,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="match_parent"
-                    android:text="@string/countries_text"
+                    android:text="@string/airline_details_text"
                     style="@style/vodafone_regular_24"
                     android:gravity="center"
                     android:layout_margin="@dimen/size_16dp"/>
