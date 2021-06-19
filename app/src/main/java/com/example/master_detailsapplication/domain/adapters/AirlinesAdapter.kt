@@ -1,4 +1,4 @@
-package com.example.master_detailsapplication.data.adapters
+package com.example.master_detailsapplication.domain.adapters
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -6,17 +6,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.master_detailsapplication.presentation.ui.activities.MainActivity
-import com.example.master_detailsapplication.data.models.Airline
+import com.example.master_detailsapplication.domain.models.Airline
 import com.example.master_detailsapplication.databinding.AirlineItemBinding
 import com.example.master_detailsapplication.presentation.ui.activities.AirlineDetails
 
-class AirlinesAdapter(private var items: List<Airline> = listOf()) :RecyclerView.Adapter<AirlinesAdapter.ViewHolder>() {
+class AirlinesAdapter(private var items: MutableList<Airline> = mutableListOf()) :RecyclerView.Adapter<AirlinesAdapter.ViewHolder>() {
 
 
-    @JvmName("set Airlines Items")
+    @JvmName("set Airlines List")
     fun setItems(items:List<Airline>){
-        this.items = items
+        this.items = items.toMutableList()
+        notifyDataSetChanged()
+    }
+
+    @JvmName("add Airline to Airlines List")
+    fun addItem(airline:Airline){
+       items.add(airline)
         notifyDataSetChanged()
     }
 

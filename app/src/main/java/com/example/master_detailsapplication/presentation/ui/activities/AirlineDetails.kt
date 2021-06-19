@@ -6,9 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.master_detailsapplication.R
-import com.example.master_detailsapplication.data.models.Airline
+import com.example.master_detailsapplication.domain.models.Airline
 import com.example.master_detailsapplication.databinding.ActivityAirlineDetailsBinding
-import com.squareup.picasso.Picasso
+import java.lang.Exception
 
 
 class AirlineDetails : AppCompatActivity() {
@@ -30,38 +30,36 @@ class AirlineDetails : AppCompatActivity() {
         airlineDetailsBinding.backBtn.setOnClickListener { finish() }
 
 
-        if(airline.logo.isEmpty()){
-            Picasso
-                .get()
-                .load(R.drawable.placeholder)
-                .into(airlineDetailsBinding.airlineImage)
-        }else {
-            Picasso
-                .get()
-                .load(airline.logo)
-                .placeholder(R.drawable.placeholder)
-                .into(airlineDetailsBinding.airlineImage)
-        }
+        airlineDetailsBinding.airlineTitle.text = if(airline.name.isNotEmpty()) airline.name
+        else getString(R.string.not_provided_text)
 
-        airlineDetailsBinding.airlineTitle.text = airline.name
-        airlineDetailsBinding.airlineCountry.text = airline.country
-        airlineDetailsBinding.airlineSlogan.text = airline.slogan
-        airlineDetailsBinding.airlineHeadQuarter.text = airline.head_quaters
+        airlineDetailsBinding.airlineCountry.text = if(airline.country.isNotEmpty()) airline.country
+        else getString(R.string.not_provided_text)
+
+        airlineDetailsBinding.airlineSlogan.text = if(airline.slogan.isNotEmpty())  airline.slogan
+        else getString(R.string.not_provided_text)
+
+        airlineDetailsBinding.airlineHeadQuarter.text = if(airline.head_quaters.isNotEmpty()) airline.head_quaters
+        else getString(R.string.not_provided_text)
 
 
         airlineDetailsBinding.visitBtn.setOnClickListener {
-            if(airline.website.isNotEmpty()) {
-                var url = airline.website
-                if(!url.startsWith("www.")&& !url.startsWith("http://")){
-                    url = "www.$url"
-                }
-                if(!url.startsWith("http://")){
-                    url = "http://$url"
-                }
+            try {
+                if (airline.website.isNotEmpty()) {
+                    var url = airline.website
+                    if (!url.startsWith("www.") && !url.startsWith("http://")) {
+                        url = "www.$url"
+                    }
+                    if (!url.startsWith("http://")) {
+                        url = "http://$url"
+                    }
                     val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-                startActivity(browserIntent)
-            }else{
-                Toast.makeText(applicationContext,"Invalid URL", Toast.LENGTH_SHORT).show()
+                    startActivity(browserIntent)
+                } else {
+                    Toast.makeText(applicationContext, "Invalid URL", Toast.LENGTH_SHORT).show()
+                }
+            }catch (e:Exception){
+                Toast.makeText(applicationContext, "Invalid URL", Toast.LENGTH_SHORT).show()
             }
         }
     }

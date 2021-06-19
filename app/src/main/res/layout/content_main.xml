@@ -59,6 +59,16 @@
             android:layout_marginBottom="@dimen/size_16dp"
             android:windowSoftInputMode="adjustResize"
             android:id="@+id/airlinesList"/>
+        <include layout="@layout/empty_state"
+            android:visibility="gone"
+            android:id="@+id/emptyAirlineState"/>
+        <include layout="@layout/no_internet_connection"
+            android:visibility="gone"
+            android:id="@+id/noInternetConnectionState"/>
+        <include layout="@layout/error_state"
+            android:visibility="gone"
+            android:id="@+id/errorState"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

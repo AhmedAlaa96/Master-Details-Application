@@ -59,12 +59,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="@dimen/size_16dp">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/airline_image"
-                    android:adjustViewBounds="true"
-                    android:id="@+id/airlineImage"/>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

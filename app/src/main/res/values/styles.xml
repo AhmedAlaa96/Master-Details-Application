@@ -179,4 +179,23 @@
         <item name="textInputStyle">@style/textInputLayout</item>
     </style>
 
+
+    <style name="Body_ThemeOverlay.MaterialComponents.MaterialAlertDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogBodyTextStyle">@style/BodyMaterialAlertDialog.MaterialComponents.Body.Text</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/BodyMaterialAlertDialog.MaterialComponents.Title.Text</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="BodyMaterialAlertDialog.MaterialComponents.Body.Text" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="fontWeight">600</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="titleTextStyle">@style/vodafone_regular_20</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="BodyMaterialAlertDialog.MaterialComponents.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textAllCaps">false</item>
+        <item name="titleTextStyle">@style/vodafone_regular_24</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

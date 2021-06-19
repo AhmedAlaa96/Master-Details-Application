@@ -39,7 +39,7 @@
                     android:maxLines="1"
                     android:scrollHorizontally="true"
                     style="@style/vodafone_regular_16"
-                    android:id="@+id/airlineNameEditText"/>
+                    android:id="@+id/nameEditText"/>
             </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -161,6 +161,7 @@
                 android:text="@string/confirm_text"
                 style="@style/primaryButton"
                 android:id="@+id/confirmBtn"
+                android:enabled="false"
                 android:layout_marginTop="@dimen/size_8dp"/>
 
             <com.google.android.material.button.MaterialButton

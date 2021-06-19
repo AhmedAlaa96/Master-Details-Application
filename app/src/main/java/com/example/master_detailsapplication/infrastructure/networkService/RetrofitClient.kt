@@ -1,6 +1,6 @@
 package com.example.master_detailsapplication.infrastructure.networkService
 
-import com.example.master_detailsapplication.infrastructure.networkService.apiInterfaces.ApiManagerInterface
+import com.example.master_detailsapplication.data.source.network.ApiManagerInterface
 import com.example.master_detailsapplication.infrastructure.utils.Constants
 import retrofit2.Retrofit
 import okhttp3.OkHttpClient
@@ -31,7 +31,7 @@ class RetrofitClient {
                 .addConverterFactory(GsonConverterFactory.create())
         }
 
-        fun apiService(): ApiManagerInterface{
+        fun apiService(): ApiManagerInterface {
            return retrofitBuilder()
                 .build()
                 .create(ApiManagerInterface::class.java)
