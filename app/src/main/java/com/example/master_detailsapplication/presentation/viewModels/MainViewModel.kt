@@ -5,9 +5,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.master_detailsapplication.domain.models.Airline
 import com.example.master_detailsapplication.domain.ViewModelUseCases
+import com.example.master_detailsapplication.domain.ViewModelUseCasesInterface
 import com.example.master_detailsapplication.presentation.viewModels.interfaces.MainViewModelInterface
 
-class MainViewModel constructor(private val viewModelUseCases: ViewModelUseCases): MainViewModelInterface, ViewModel() {
+class MainViewModel constructor(private val viewModelUseCases: ViewModelUseCasesInterface): MainViewModelInterface, ViewModel() {
 
     private val _getAirlines: MutableLiveData<List<*>> by lazy { MutableLiveData<List<*>>() }
 
