@@ -1,11 +1,9 @@
 package com.example.master_detailsapplication.domain.base
 
 import io.reactivex.Single
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
 
 
-abstract class SingleUseCaseWithParams<in Params,T> : UseCase() {
+abstract class SingleUseCaseWithParams<in Params,T>(private val schedulers: IOSchedulers = MainIOSchedulers()) : UseCase() {
 
 
     internal abstract fun run(input: Params): Single<T>
@@ -18,8 +16,8 @@ abstract class SingleUseCaseWithParams<in Params,T> : UseCase() {
     ) {
         disposeLast()
         lastDisposable = run(input)
-            .subscribeOn(Schedulers.io())
-            .observeOn(AndroidSchedulers.mainThread())
+            .subscribeOn(schedulers.io)
+            .observeOn(schedulers.main)
             .doAfterTerminate(onFinished)
             .subscribe(onSuccess, onError)
 

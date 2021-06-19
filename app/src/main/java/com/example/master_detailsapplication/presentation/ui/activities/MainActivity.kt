@@ -103,7 +103,6 @@ class MainActivity : AppCompatActivity() {
             }else{
                 println("ERROR")
                 println(it[1])
-                // TODO: HANDLE ERRORS
                 airlinesList.visibility = View.GONE
                 emptyAirlineState.visibility = View.GONE
                 noInternetConnectionState.visibility = View.GONE

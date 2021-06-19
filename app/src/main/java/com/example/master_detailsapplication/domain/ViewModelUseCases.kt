@@ -1,9 +1,9 @@
 package com.example.master_detailsapplication.domain
 
 data class ViewModelUseCases(
-    val getAirlinesUseCase: GetAirlinesUseCase,
-    val createAirlineUseCase: CreateAirlineUseCase,
-    val getLocalAirlinesUseCase: GetLocalAirlinesUseCase,
-    val createLocalAirlineUseCase: CreateLocalAirlineUseCase,
-    val deleteLocalAirlinesUseCase: DeleteLocalAirlinesUseCase
-)
+    override val getAirlinesUseCase: GetAirlinesUseCase,
+    override val createAirlineUseCase: CreateAirlineUseCase,
+    override val getLocalAirlinesUseCase: GetLocalAirlinesUseCase,
+    override val createLocalAirlineUseCase: CreateLocalAirlineUseCase,
+    override val deleteLocalAirlinesUseCase: DeleteLocalAirlinesUseCase
+) : ViewModelUseCasesInterface
