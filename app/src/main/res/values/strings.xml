@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Master-Details Application</string>
+    <string name="countries_text">Countries</string>
+    <string name="fab_plus_text">Plus Icon to add new airline</string>
+    <string name="search_by_airline_name_text">Search by airline name</string>
+    <string name="search_airlines_by_name_text">Search airlines by name</string>
+    <string name="add_new_air_line_text">Add new air line</string>
+    <string name="air_line_name_text">Air line name</string>
+    <string name="slogan_text">Slogan</string>
+    <string name="country_text">Country</string>
+    <string name="headquarters_text">Headquarters</string>
+    <string name="website_text">Website</string>
+    <string name="established_text">Established</string>
+    <string name="confirm_text">Confirm</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="back_button_from_airline_details_text">Back button from Airline details.</string>
+    <string name="arrow_to_airline_details_text">Arrow to airline details.</string>
+    <string name="visit_text">Visit</string>
+    <string name="airline_image">Airline image</string>
+    <string name="not_provided_text">Not Provided</string>
+    <string name="no_result_found_text">No Result found.</string>
+    <string name="no_internet_connection">Please Check your internet connection and try again</string>
+    <string name="retry_text">Retry</string>
+    <string name="error_msg_text">Opss, Something went wrong.\nPlease try again.</string>
+    <string name="no_internet_connection_title">No Internet Connection</string>
+    <string name="ok_text">Ok</string>
+    <string name="BE_internet_error">Unable to resolve host \"api.instantwebtools.net\": No address associated with hostname</string>
+    <string name="error_msg_text_title">Error</string>
 </resources>

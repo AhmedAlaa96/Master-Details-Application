@@ -9,9 +9,13 @@
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="primary_color">#E60000</color>
+    <color name="primary_color_pressed">#b30000</color>
     <color name="primary_color_disabled">#4DE60000</color>
     <color name="text_color">#333333</color>
     <color name="text_bold_color">#666666</color>
     <color name="hint_color">#CCCCCC</color>
+    <color name="box_color">#CCCCCC</color>
     <color name="background_color">#F4F4F4</color>
+    <color name="gray300_color">#E9ECEF</color>
+    <color name="loading_background_color">#26000000</color>
 </resources>

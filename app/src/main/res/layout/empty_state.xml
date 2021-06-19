@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_no_airlines_found"
+            android:contentDescription="@string/no_result_found_text" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_result_found_text"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:gravity="center"
+            style="@style/vodafone_regular_24"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
